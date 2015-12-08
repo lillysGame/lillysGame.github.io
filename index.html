@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LILLY'S GAME</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+  <link rel="stylesheet" href="css/example.css">
+</head>
+<body id="body" oncontextmenu="return false;">
+  <div class='container'>
+
+    <!--TARGET-->
+    <img id="target1" src="img/randomShapes/target1.png" alt="target"/>
+    <img id="target1" src="img/randomShapes/target1.png" alt="target" />
+
+    <!--SLIDER-->
+    <div id="slider"></div>
+
+    <!--PINWHEEL-->
+    <img id="pinWheel" src="img/randomShapes/pinWheel1.png" alt="pinWheel"/>
+
+    <!--PAINT-->
+    <div id="canvasDiv"></div>
+    <script type="text/javascript">
+    	 drawingApp.init();
+	  </script>
+    <div id="container"></div>
+
+    <!--SHAPES AND NUMBERS-->
+    <div class="img" id="first">
+      <!--SHAPE 1-->
+      <img class="shapes" id="shape1" src="img/shapes/Circle/red.png" alt="shape1"/>
+      <!--NUMBER 1-->
+      <img class="numbers" id="number1" src="img/numbers/comicSans/1.png" alt="number1"/>
+    </div>
+
+    <div class="img" id="second">
+      <!--SHAPE 2-->
+      <img class="shapes" id="shape2" src="img/shapes/Triangle/orange.png" alt="shape2"/>
+      <!--NUMBER 2-->
+      <img class="numbers" id="number2" src="img/numbers/comicSans/2.png" alt="number2"/>
+    </div>
+
+    <div class="img" id="third">
+      <!--SHAPE 3-->
+      <img class="shapes" id="shape3" src="img/shapes/Square/yellow.png" alt="shape3"/>
+      <!--NUMBER 3-->
+      <img class="numbers" id="number3" src="img/numbers/comicSans/3.png" alt="number3"/>
+    </div>
+
+    <div class="img" id="fourth">
+      <!--SHAPE 4-->
+      <img class="shapes" id="shape4" src="img/shapes/Pentagon/green.png" alt="shape4"/>
+      <!--NUMBER 4-->
+      <img class="numbers" id="number4" src="img/numbers/comicSans/4.png" alt="number4"/>
+    </div>
+
+    <div class="img" id="fifth">
+      <!--SHAPE 5-->
+      <img class="shapes" id="shape5" src="img/shapes/Hexagon/turquoise.png" alt="shape5"/>
+      <!--NUMBER 5-->
+      <img class="numbers" id="number5" src="img/numbers/comicSans/5.png" alt="number5"/>
+    </div>
+
+    <!--STARS-->
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+    <div class='p'></div>
+  </div>
+
+  <!--JAVASCRIPT LIBRARIES-->
+  <script src="js/externalJquery/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+
+  <!--MY JAVASCRIPT-->
+  <script src="js/main.js"></script>
+
+  <!--JAVASCRIPT FOR THE PAINT FUNCTION-->
+  <script src="js/sketch.js"></script>
+  <script>
+    $( "#slider" ).slider({
+    	range: true,
+    	values: [ 17, 67 ]
+    });
+    var COLOURS = [ '#ED23D7', '#46B483', '#2B5188', '#46B483', '#B1B446' ];
+    var radius = 0;
+
+    Sketch.create({
+
+        container: document.getElementById( 'container' ),
+        autoclear: false,
+
+        setup: function() {
+            console.log( 'setup' );
+        },
+
+        update: function() {
+            radius = 2 + abs( sin( this.millis * 0.003 ) * 50 );
+        },
+
+        // Event handlers
+
+        keydown: function() {
+            if ( this.keys.C ) this.clear();
+        },
+
+        // Mouse & touch events are merged, so handling touch events by default
+        // and powering sketches using the touches array is recommended for easy
+        // scalability. If you only need to handle the mouse / desktop browsers,
+        // use the 0th touch element and you get wider device support for free.
+        touchmove: function() {
+
+            for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+
+                touch = this.touches[i];
+
+                this.lineCap = 'round';
+                this.lineJoin = 'round';
+                this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
+                this.lineWidth = radius;
+
+                this.beginPath();
+                this.moveTo( touch.ox, touch.oy );
+                this.lineTo( touch.x, touch.y );
+                this.stroke();
+            }
+        }
+    });
+  </script>
+</body>
+
+</html>
